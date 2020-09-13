@@ -26,7 +26,6 @@ def userExists(username):
 		fUserID = followdata['user']['id']
 		return {'username':username,'id':fUserID}
 
-
 def Login(username,password):
 	sess = requests.Session()
 	sess.cookies.update ({'sessionid' : '', 'mid' : '', 'ig_pr' : '1', 'ig_vw' : '1920', 'csrftoken' : '',  's_network' : '', 'ds_user_id' : ''})
